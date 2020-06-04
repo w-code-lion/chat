@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Чат</title>
+
+	<link rel="icon" href="images/logo-icon.svg">
+    <meta property="og:image" content="images/logo-icon.svg">
+
+
+	<link rel="stylesheet" href="css/chat.css">
+
+	 <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.min.css">
+
+
+
+	<!-- [if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+
+
+
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<a class="logo" href="index.html">non<img class="logo-icon" src="images/logo-icon.svg" alt="">me.chat</a>
+            <div class="nav__header">
+		        <div class="nav__container">
+		            <!-- Навигация для десктопа -->
+					<div class="block__right">
+						<p class="online">Онлайн: <a href="#">1245</a> (<a href="#">👩 245</a>, <a href="#">👨 1000</a>)</p>
+						<a class="is__free" href="#">Начать Бесплатно</a>
+						<a class="sign__in" href="form.html">Войти</a>
+					</div>
+		                 
+		                <!-- Кнопка для мобтльной навигации -->
+			            <div id="menu__togle" class="menu__icon">
+			                <div class="menu__icon-line"></div>
+			            </div>
+
+			             <!-- Мобильная навигация -->
+		                <div id="mobile__nav" class="mobile__nav">
+		                   <div class="block__right-mobile">
+								<p class="online">Онлайн: <a href="#">1245</a> (<a href="#">👩 245</a>, <a href="#">👨 1000</a>)</p>
+								<a class="is__free" href="#">Начать Бесплатно</a>
+								<a class="sign__in" href="form.html">Войти</a>
+					        </div>
+		                </div>
+		        </div>
+		    </div>
+		    <div class="close-chat"></div>
+		</div>
+	</div>
+</header>
+<div class="chat">
+	 <div class="container">
+	 	<div class="chat__block">
+
+
+
+<div id="preloader-body" class="no-scroll-y">
+	
+	<section>
+		<div id="preloader">
+
+			<div id="ctn-preloader" class="ctn-preloader">
+				<p class="text__preload">Вы начали поиск собеседника</p>
+                 
+				       <a class="stop__search" href="#">Остановить поиск</a>
+
+				       <div class="line__preload"></div>
+                  
+				<div class="animation-preloader">
+					
+
+                    <div id="loader"></div>
+                
+                      <p class="preloader__text">Ищем собеседника..</p>
+					
+				</div>
+
+
+				
+			</div>
+			<form class="form__preload">
+	 			<textarea class="form__text-preload" name="text" placeholder="Напишите сообщение..." disabled="disabled"></textarea>
+	 			<div class="form__button-preload">
+	 				<button class="emodzi__preload" type="submit" disabled="disabled"><img src="images/emodzi.svg" alt=""></button>
+	 				<button class="attach__preload" type="submit" disabled="disabled"><img src="images/attach.svg" alt=""></button>
+	 				<button class="btn__two-preload" type="submit" id="button__preload" disabled="disabled">Отправить</button>
+	 				<button class="paper-plane-preload" disabled="disabled"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+	 			</div>
+	 		</form>
+		</div>
+	</section>
+	
+</div>
+
+
+
+	 		<div class="chat__block-top">
+	 			<div class="user">
+	 				<a class="corn__link" href="#"><img class="corn" src="images/corn.png" alt=""></a>
+	 				<h3 class="name"><a class="name__link" href="#">Твоя Незнакомка</a></h3>
+	 				<p class="online__text"><img src="images/circle.svg" alt=""> Online</p>
+	 			</div>
+				<a class="chat__end" href="#">Закончить Чат</a>
+	 		</div>
+	 		<div class="chat__block-center">
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+                        <div class="vip__foto">
+		 				    <img class="dog" src="images/munoz.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png"> Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+
+
+
+
+
+<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__top">
+	 				<a class="corn__link-two" href="#"><img src="images/corn.png" alt=""></a>
+	 				<div class="block__text">
+		 				<p class="user__text">Привет! Как себя чувствуешь, красавчик? Может пошалим?</p>
+		 				<p class="time">8:00 PM</p>
+		 			</div>	
+	 			</div>
+	 			<div class="text__bottom">
+	 				<a class="strawberry__two" href="#"><img src="images/strawberry-two.png" alt=""> </a>
+	 				<div class="block__text-two">
+		 				<p class="user__two">Привет! Как делишки?</p>
+		 				<div class="vip__foto">
+		 				    <img class="dog" src="images/dog.jpg" alt="">
+		 				    <button class="vip__btn">Открыть фото</button>
+                            <div class="vip__text">
+                            	<div class="close__vip"></div>
+                            	<h3 class="vip__status">VIP статус</h3>
+                            	<h2 class="will__get">Что ты получишь:</h2>
+                            	<ul class="vip__list">
+                            		<li class="vip__item"><span class="one">1</span><i class="fa fa-female" aria-hidden="true"></i>Поиск девушек <br> и фильтр по возрасту</li>
+                            		<li class="vip__item"><span class="two">2</span><img class="straw" src="images/straw.png">Просмотр фото <br> без ограничений</li>
+                            	</ul>
+                            	<a href="#" class="buy__vip">Купить VIP</a>
+                            </div>
+                        </div>
+		 				<p class="time">20 апреля 2020 01:13</p>
+		 			</div>	
+	 			</div>
+	 		</div>
+	 		<form class="form">
+	 			<textarea class="form__text" name="text" placeholder="Напишите сообщение..."></textarea>
+	 			<div class="form__button">
+	 				<button class="emodzi" type="submit"><img src="images/emodzi.svg" alt=""></button>
+	 				<button class="attach" type="submit"><img src="images/attach.svg" alt=""></button>
+	 				<button class="btn__two" type="submit" id="button">Отправить</button>
+	 				<button class="paper-plane"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+	 			</div>
+	 		</form>
+	 	</div>
+	 </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__block">
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__list-item"><a class="menu__link" href="#">О нас</a></li>
+					<li class="menu__list-item"><a class="menu__link" href="#">Условия</a></li>
+					<li class="menu__list-item"><a class="menu__link" href="#">Конфиденциальность</a></li>
+					<li class="menu__list-item"><a class="menu__link" href="#">Города</a></li>
+					<li class="menu__list-item"><a class="menu__link" href="#">Помощь</a></li>
+					<li class="menu__list-item"><a class="menu__link" href="#">Пресса</a></li>
+				</ul>
+			</nav>
+			<p class="copuright">2020 &copy; NoNameChat</p>
+		</div>
+	</div>
+</footer>
+
+
+
+ <script src="js/jquery.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/jquery.nice-select.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
+
+
+<script>
+	$('.vip__btn').click(function(){
+  $(".vip__text").fadeToggle(500);
+}); 
+
+	$('.close__vip').click(function(){
+  $(".vip__text").fadeToggle(300);
+}); 
+</script>
+
+<script>
+
+  $(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    $('#preloader-body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+     
+      $('#preloader').delay(2000).queue(function() {
+        $(this).remove();
+      });
+    }
+  }, 2000);
+  
+});
+
+</script>
+
+<script>
+$("#mobile__nav").swipe( {
+    swipeLeft:leftSwipe,
+    threshold:0
+});
+function leftSwipe(event){
+	$('#menu__togle, #mobile__nav').removeClass('menu-icon-active mobile-nav--active');
+}
+</script>
+
+<script>
+	$ ( function () {
+   $ ( " .chat__block-center" ). swipe ({
+     // Общий обработчик 
+    пролистывания для всех направлений swipe : function ( событие , направление , расстояние , продолжительность , fingerCount , fingerData ) {
+       $ ( this ). text ( " Вы сильно ударили "  + направление);  
+    }
+  });
+
+  // Установить некоторые параметры позже 
+  $ ( " .chat__block-center " ). проведите пальцем ({пальцы : 2 });
+});
+</script>
+
+</body>
+</html>
